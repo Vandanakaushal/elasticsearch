@@ -124,3 +124,14 @@ GET vehicles
 ```
 
 * We can't index multiple types of document into an index as mappings are rejected.
+* Search based on specific condtion
+```
+GET vehicles/_search
+{
+  "query":{
+    "term":{
+      "make":"benz1"
+    }
+  }
+}
+```
