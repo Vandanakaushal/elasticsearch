@@ -122,3 +122,5 @@ GET vehicles
   }
 }
 ```
+
+* We can't index multiple types of document into an index as mappings are rejected.
