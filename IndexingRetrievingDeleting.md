@@ -135,3 +135,15 @@ GET vehicles/_search
   }
 }
 ```
+* Actual curl command for the above request is:
+
+```
+curl -XGET "http://localhost:9200/vehicles/_search" -H 'Content-Type: application/json' -d'
+{
+  "query":{
+    "term":{
+      "make":"benz1"
+    }
+  }
+}'
+```
