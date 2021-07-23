@@ -1,15 +1,16 @@
 * Read request: It can go to any node(Replica or the primary node) as read needs to be fast. Handled by load balancers like round robin.
 
-
+![image](GetRequest.png)
 
 
 * Write request: Request will be redirected to the primary node. Data will be written/modifed in primary node first and then copied over to replica.
 
-
+![image2](DeleteRequest.png)
 
 
 * Delete request: First to primary shard and then replica
 
+![image3](DeleteRequest.png)
 
 
 # Write request takes more time why ?
